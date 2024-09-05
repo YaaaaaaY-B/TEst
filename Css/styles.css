@@ -1,0 +1,170 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #dfe6d8, #b0c7a2);
+    color: #333;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: #a8bca9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Main heading */
+h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* Navigation styling */
+nav {
+    position: relative;
+}
+
+/* Menu button */
+.menu-btn {
+    background-color: #8f9d8a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for menu button */
+.menu-btn:hover {
+    background-color: #a8bca9;
+}
+
+/* Dropdown menu styling */
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #a8bca9;
+    width: 100%;
+    text-align: center;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/* Dropdown menu items */
+.nav-menu a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-bottom: 1px solid #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for menu items */
+.nav-menu a:hover {
+    background-color: #8f9d8a;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+}
+
+/* Button styling */
+button {
+    background-color: #8f9d8a;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #a8bca9;
+    transform: scale(1.05);
+}
+
+/* Quote container styling */
+#quote-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Photo gallery styling */
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Letter and reason styling */
+.letter, .reason {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#quote-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+}
+
+button {
+    background-color: #ff4040;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff7373;
+}
